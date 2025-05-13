@@ -21,7 +21,7 @@ Készítsd el a WebKonf 2025 nevű képzeletbeli konferencia statikus weboldalá
 9. A helyszínt tartalmazó section szövege legyen középre igazítva.
 10. A footer szövege legyen középre igazítva.
 
-### 2 pontos feladatok (15 db)
+### 2 pontos feladatok (10 db)
 
 11. A .navmenu osztályú elem legyen flexbox elrendezésű, vízszintes irányban, középre igazítva, 20px távolsággal.
 12. A program szekció kapjon 40px margót felül és alul.
