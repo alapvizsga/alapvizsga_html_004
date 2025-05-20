@@ -5,6 +5,10 @@ Középiskolás HTML gyakorlófeladat – 10. évfolyam
 Készítsd el a WebKonf 2025 nevű képzeletbeli konferencia statikus weboldalát a megadott fájlok segítségével!
 
 ---
+### A feladat elkezdése előtt futtasd le terminálban a
+    pip install pytest bs4 cssutils
+### parancsot.
+### A parancs lefuttatása nélkül nem fog működni a kiértékelés.
 
 ## Feladatok
 
