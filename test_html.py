@@ -72,42 +72,71 @@ def test_11_navmenu_flex(css_rules):
     assert nav.get("justify-content") == "center"
     assert nav.get("gap") == "20px"
 
+def test_11_2(css_rules):
+    test_11_navmenu_flex(css_rules)
 
-def test_14_program_margin(css_rules):
+def test_12_program_margin(css_rules):
     program = css_rules.get(".program", {})
     assert program.get("margin") == "40px 0"
 
-def test_15_eloadok_flex(css_rules):
+def test_12_2(css_rules):
+    test_12_program_margin(css_rules)
+
+def test_13_eloadok_flex(css_rules):
     eloadok = css_rules.get(".eloadok-lista", {})
     assert eloadok.get("display") == "flex"
     assert eloadok.get("justify-content") == "space-between"
 
-def test_16_article_width(css_rules):
+def test_13_2(css_rules):
+    test_13_eloadok_flex(css_rules)
+
+def test_14_article_width(css_rules):
     article = css_rules.get(".eloadok-lista article", {})
     assert article.get("width") == "30%"
 
-def test_17_img_size(css_rules):
+def test_14_2(css_rules):
+    test_14_article_width(css_rules)
+
+def test_15_img_size(css_rules):
     img = css_rules.get(".eloadok-lista img", {})
     assert img.get("width") == "150px"
     assert img.get("height") == "auto"
 
-def test_18_h4_style(css_rules):
+def test_15_2(css_rules):
+    test_15_img_size(css_rules)
+
+def test_16_h4_style(css_rules):
     h4 = css_rules.get(".eloadok-lista h4", {})
     assert h4.get("font-weight") == "bold"
     assert h4.get("font-size") == "20px"
     assert h4.get("margin") == "10px 0 5px"
 
-def test_19_article_text_center(css_rules):
+def test_16_2(css_rules):
+    test_16_h4_style(css_rules)
+
+def test_17_article_text_center(css_rules):
     article = css_rules.get(".eloadok-lista article", {})
     assert article.get("text-align") == "center"
 
-def test_20_img_border_radius(css_rules):
+def test_17_2(css_rules):
+    test_17_article_text_center(css_rules)
+
+def test_18_img_border_radius(css_rules):
     img = css_rules.get(".eloadok-lista img", {})
     assert img.get("border-radius") == "10px"
 
-def test_21_section_spacing(css_rules):
+def test_18_2(css_rules):
+    test_18_img_border_radius(css_rules)
+
+def test_19_section_spacing(css_rules):
     sections = css_rules.get("section", {})
     assert "margin-top" in sections or "margin" in sections
 
-def test_22_motto_styling(css_rules):
+def test_19_2(css_rules):
+    test_19_section_spacing(css_rules)
+
+def test_20_motto_styling(css_rules):
     assert css_rules.get(".motto", {}).get("font-style") == "italic"
+
+def test_20_2(css_rules):
+    test_20_motto_styling(css_rules)
